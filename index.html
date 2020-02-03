@@ -44,7 +44,7 @@
     </nav>
   </header>
   <main>
-    <h1>Компания "Техномарт"</h1>
+    <h1 class="visually-hidden">Компания "Техномарт"</h1>
     <!-- Красная часть макета  -->
     <section>
       <h2>Промо-блок</h2>
@@ -65,7 +65,7 @@
         <li>
           <h3>Дрели</h3>
           <span>Соседям на радость</span>
-          <a href="">Открыть каталог</a>
+          <a href="technomart-catalog.psd">Открыть каталог</a>
         </li>
         <li>
           <h3>Скидки 50%</h3>
@@ -208,12 +208,29 @@
         заехав в наш офис:
       </p>
       <figure>
-        <a href="maps.bb">
-          <img src="adress_map.jpg" alt="Большая Конюшенная 19">
+        <a href="img/map.jpg">
+          <img src="map.jpg" alt="Большая Конюшенная 19" width="700" height="495">
         </a>
         <figcaption>Большая Конюшенная 19</figcaption>
       </figure>
       <button name="feedback">Заблудились?Напишите нам!</button>
+      <!-- Форма обратной связи -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="feedback-form-name">Ваше имя:</label>
+            <input id="feedback-form-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="feedback-form-email">Ваш e-mail:</label>
+            <input id="feedback-form-email" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="feedback-form-message">Текст письма:</label>
+            <textarea id="feedback-form-message" name="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <!-- Форма обратной связи -->
     </section>
   </main>
   <footer>
