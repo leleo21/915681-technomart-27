@@ -61,44 +61,48 @@
         <section>
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <!-- Форма фильтра товаров -->
-            <fieldset>
-                <legend>Производители:</legend>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="Bosch" checked>
-                        Bosch
-                    </li>
-                    <li>
-                        <input type="checkbox" name="Интерскол">
-                        Интерскол
-                    </li>
-                    <li>
-                        <input type="checkbox" name="Makita" checked>
-                        Makita
-                    </li>
-                    <li>
-                        <input type="checkbox" name="Dewalt">
-                        Dewalt
-                    </li>
-                    <li>
-                        <input type="checkbox" name="Hitachi">
-                        Hitachi
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Питание:</legend>
-                <ul>
-                    <li>
-                        <input type="radio" name="Rechargeable" checked>
-                        Аккумуляторные
-                    </li>
-                    <li>
-                        <input type="radio" name="mains">
-                        Сетевые
-                    </li>
-                </ul>
-            </fieldset>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="Bosch" id="filter-Bosch" checked>
+
+                            <label for="filter-Bosch">Bosch</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Интерскол" id="filter-Interskol">
+                            <label for="filter-Interskol">Интерскол</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Makita" id="filter-Makita" checked>
+                            <label for="filter-Makita">Makita</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Dewalt" id="filter-Dewalt">
+                            <label for="filter-Dewalt">Dewalt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="Hitachi" id="filter-Hitachi">
+                            <label for="filter-Hitachi">Hitachi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Rechargeable" id="filter-Rechargeable" checked>
+                            <label for="filter-Rechargeable">Аккумуляторные</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="mains" id="filter-mains">
+                            <label for="filter-mains">Сетевые</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
         </section>
         <!-- /Форма фильтра товаров -->
         <section>
@@ -113,7 +117,7 @@
             <h2 class="visually-hidden">Список товаров</h2>
             <ul>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -127,7 +131,7 @@
                     <a href="">15500 Р.</a>
                 </li>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -142,7 +146,7 @@
                     <a href="">25500 Р.</a>
                 </li>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -157,7 +161,7 @@
                 </li>
 
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -171,7 +175,7 @@
                     <a href="">15500 Р.</a>
                 </li>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -193,7 +197,7 @@
                     <a href="">12500 Р.</a>
                 </li>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -207,7 +211,7 @@
                     <a href="">15500 Р.</a>
                 </li>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -220,7 +224,7 @@
                     <a href="">25500 Р.</a>
                 </li>
                 <li>
-                    <div class="visually-hidden">
+                    <div>
                         <button>Купить</button>
                         <a href="">В закладки</a>
                     </div>
@@ -239,7 +243,7 @@
                 <li><a href="">Следующая</a></li>
             </ul>
             <!-- Модальное окно кнопки Купить -->
-            <div class="visually-hidden">
+            <div class="display:none">
                 <h3>Товар добавлен в корзину</h3>
                 <a href="">Оформить заказ</a>
                 <a href="">Продолжить покупки</a>
