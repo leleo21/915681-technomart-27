@@ -4,35 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <a>
-      <img src="img/logo.svg" width="111" height="24" alt="Логотип Техномарт">
+    <a class="logo">
+      <img src="img/Tekhnomart_logo.png" width="111" height="24" alt="Логотип Техномарт">
     </a>
-    <div>Поиск</div>
+    <div class="header-search">Поиск</div>
     <input type="text">
-    <div>
+    <div class="header-navigation">
       <a href="">Закладки</a>
       <a href="">Корзина</a>
-      <a href="">Оформить заказ</a>
+      <a class="header-checkout" href="">Оформить заказ</a>
     </div>
-    <p>
+    <p class="header-tagline">
       Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта
     </p>
-    <p>
-      +7(812) 555-05-55<br>
+    <p class="header-contact">
+      <div class="header-phone">+7(812) 555-05-55</div><br>
       г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
     </p>
-    <ul>
+    <ul class="header-auth">
       <li><a href=""> Войти</a></li>
       <li><a href=""> Регистрация</a></li>
     </ul>
     <nav>
-      <ul>
+      <ul class="site-navigation">
         <li><a>Главная</a></li>
         <li><a href="">Компания</a></li>
         <li><a href="">Каталог</a></li>
@@ -194,12 +198,12 @@
         Мы можем доставить ваш товар в самые отдаленные точки России!
         Технормат работает со многими транспортными компаниями:
       </p>
-      <ul>
+      <ul class="transport-list">
         <li>Деловые линии</li>
         <li>Автотрединг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="about_us.html">Подробнее о компании</a>
+      <a class="about-us-link" href="about_us.html">Подробнее о компании</a>
     </section>
     <section>
       <h2>Контакты</h2>
@@ -209,24 +213,24 @@
       </p>
       <figure>
         <a href="img/map.jpg">
-          <img src="map.jpg" alt="Большая Конюшенная 19" width="700" height="495">
+          <img src="img/map.jpg" alt="Большая Конюшенная 19" width="700" height="495">
         </a>
         <figcaption>Большая Конюшенная 19</figcaption>
       </figure>
-      <button name="feedback">Заблудились?Напишите нам!</button>
+      <button class="feedback-button" name="feedback">Заблудились?Напишите нам!</button>
       <!-- Форма обратной связи -->
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="feedback-form-name">Ваше имя:</label>
-            <input id="feedback-form-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="feedback-form-name" type="text" name="name" value="" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="feedback-form-email">Ваш e-mail:</label>
-            <input id="feedback-form-email" type="email" name="email" value="" placeholder="email@example.com">
+          <input id="feedback-form-email" type="email" name="email" value="" placeholder="email@example.com">
         </p>
         <p>
           <label for="feedback-form-message">Текст письма:</label>
-            <textarea id="feedback-form-message" name="message" placeholder="В свободной форме"></textarea>
+          <textarea id="feedback-form-message" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
@@ -236,7 +240,7 @@
   <footer>
     <div>
       <a>
-        <img src="img/logo.svg" width="111" height="24" alt="Логотип Техномарт">
+        <img class="logo" src="img/Tekhnomart_logo.png" width="111" height="24" alt="Логотип Техномарт">
       </a>
       <p>
         г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
@@ -249,22 +253,22 @@
         <li><a href="">Доставка</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
-      <ul>
+      <ul class="footer-offers">
         <li><a href="">Материалы</a></li>
         <li><a href="">Техника</a></li>
         <li><a href="">Инструмент</a></li>
         <li><a href="">Спецпредложения</a></li>
       </ul>
     </div>
-    <div>
+    <div class="footer-footer">
       <p>
         (c)2010-2017 Компания "Техномарт"<br>
         Все права защищены
       </p>
       <ul>
-        <li><a href="">Вконтакте</a></li>
-        <li><a href="">Фейсбук</a></li>
-        <li><a href="">Инстаграм</a></li>
+        <li><a href="img/icon-vk.svg">Вконтакте</a></li>
+        <li><a href="img/icon-fb.svg">Фейсбук</a></li>
+        <li><a href="img/icon-insta.svg">Инстаграм</a></li>
       </ul>
       <p>
         Обратная связь:<br>
