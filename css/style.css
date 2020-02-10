@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    color:#000000;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    background-color: #ee3643;  
+}
+
+.about-us-text {
+    font-family: "PTSans" Arial, sans-serif;
+    font-size:13px;
+    color: #32425c;
+}
+
+.header-search,
+.header-navigation a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #293449;
+}
+
+.header-navigation .header-checkout {
+    background-color:#63a63e;
+}
+
+.header-tagline {        
+    font-size: 16px;
+    color: #ee3643
+}
+
+.header-contact {         
+    font-size: 14px;
+    line-height: 1.71;
+    color: #32425c;
+}
+
+.header-phone {
+    font-size: 21px;
+    color: #ee3643
+ } 
+
+.header-auth li a {
+    color:#000000;   
+    font-size: 21px;
+    background-color:white;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #32425c;
+    list-style: none;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.transport-list {
+    font-size: 18px;
+}
+
+.about-us-link,
+.feedback-button {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.feedback-form {
+    display: none;
+}
+
+footer p,
+footer ul a {
+    font-size: 18px;
+    color: #f3f7f9;
+    background-color: #32425c;
+}
+
+.footer-offers a,
+.footer-contacts p a {
+    color:#ffda96;
+}
+
+.footer-contacts {
+    background-color: #293449;
+    font-size: 16px;
+}
+
+.header-navigation .cart {
+    background-color: #ee3643;
+}
+
+.users-options li a {
+    font-size: 14px;
+    color: #32425c;
+    text-decoration-line:underline;
+}
+
+.users-name {
+    font-size: 21px;
+    color:#000000;
+}
+
+.breadcrumbs {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 30px;
+    color:#32425c;
+}
+
+.catalog-filter legend {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 17px;
+}
+
+.catalog-filter li label {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 1.33;
+}
+
+.catalog-filter button {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+.buy_add-item {
+    display: none;
+}
+
+.item-list a {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.item-list del {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 17px;
+    color: #999999;
+}
+
+.item-list .price {
+    font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
