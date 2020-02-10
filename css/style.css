@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
 
-    font-family: "Cuprum", Arial, sans-serif ;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 1;
     color:#000000;
@@ -17,15 +17,15 @@ a {
     background-color: #ee3643;  
 }
 
-p {
-    font-family: "PTSans" Arial, sans-serif ;
+.about-us-text {
+    font-family: "PTSans" Arial, sans-serif;
     font-size:13px;
     color: #32425c;
 }
 
 .header-search,
 .header-navigation a {
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     color: #ffffff;
     background-color: #293449;
@@ -36,19 +36,20 @@ p {
 }
 
 .header-tagline {        
-        font-size: 16px;
-        color: #ee3643
-      }
-.header-contact {         
-        font-size: 14px;
-        line-height: 1.71;
-        color: #32425c;
-      }
+    font-size: 16px;
+    color: #ee3643
+}
 
-/* .header-contact .header-phone {    
-  font-size: 21px;
-  color: #ee3643
- } */ Не работает
+.header-contact {         
+    font-size: 14px;
+    line-height: 1.71;
+    color: #32425c;
+}
+
+.header-phone {
+    font-size: 21px;
+    color: #ee3643
+ } 
 
 .header-auth li a {
     color:#000000;   
@@ -56,27 +57,28 @@ p {
     background-color:white;
 }
 
-
-.site-navigation li a {
+.site-navigation a {
     font-size: 17px;
     color: #ffffff;
     background-color: #32425c;
     list-style: none;
 }
 
-h2{
-  font-size: 30px;
-  
+h2 {
+    font-size: 30px;
 }
+
 .transport-list {
     font-size: 18px;
 }
+
 .about-us-link,
 .feedback-button {
     font-size: 14px;
     color: #ffffff;
     background-color: #ee3643;
 }
+
 .feedback-form {
     display: none;
 }
@@ -87,14 +89,17 @@ footer ul a {
     color: #f3f7f9;
     background-color: #32425c;
 }
+
 .footer-offers a,
-.footer-footer p a {
+.footer-contacts p a {
     color:#ffda96;
 }
-.footer-footer {
+
+.footer-contacts {
     background-color: #293449;
     font-size: 16px;
 }
+
 .header-navigation .cart {
     background-color: #ee3643;
 }
@@ -111,42 +116,49 @@ footer ul a {
 }
 
 .breadcrumbs {
-    font-family: PTSans;
-  font-size: 13px;
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
 }
+
 h1 {
     font-size: 30px;
     color:#32425c;
 }
+
 .catalog-filter legend {
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 17px;
 }
 
 .catalog-filter li label {
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
     line-height: 1.33;
 }
+
 .catalog-filter button {
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
 }
+
 .buy_add-item {
     display: none;
 }
+
 .item-list a {
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 18px;
 }
+
 .item-list del {
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 17px;
     color: #999999;
 }
+
 .item-list .price {
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   color: #ffffff;
   background-color: #ee3643;
