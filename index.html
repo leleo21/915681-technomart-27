@@ -11,30 +11,34 @@
 </head>
 
 <body>
-  <header>
-    <a class="logo">
-      <img src="img/Tekhnomart_logo.png" width="111" height="24" alt="Логотип Техномарт">
-    </a>
-    <div class="header-search">Поиск</div>
-    <input type="text">
-    <div class="header-navigation">
-      <a href="">Закладки</a>
-      <a href="">Корзина</a>
-      <a class="header-checkout" href="">Оформить заказ</a>
+  <header class="main-header">
+    <div class="top-header-wrapper">
+      <a class="logo">
+        <img src="img/Tekhnomart_logo.png" width="109px" height="19px" alt="Логотип Техномарт">
+      </a>
+      <div class="header-search">Поиск:</div>
+      <input type="search">
+      <div class="header-navigation">
+        <a href="">Закладки</a>
+        <a href="">Корзина</a>
+        <a class="header-checkout" href="">Оформить заказ</a>
+      </div>
     </div>
-    <p class="header-tagline">
-      Интернет-магазин<br>
-      строительных материалов<br>
-      и инструментов для ремонта
-    </p>
-    <p class="header-contact">
-      <a class="header-phone" href="" >+7(812) 555-05-55</a><br>
-      г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
-    </p>
-    <ul class="header-auth">
-      <li><a href=""> Войти</a></li>
-      <li><a href=""> Регистрация</a></li>
-    </ul>
+    <div class="middle-head-wrapper">
+      <p class="header-tagline">
+        Интернет-магазин<br>
+        строительных материалов<br>
+        и инструментов для ремонта
+      </p>
+      <p class="header-contact">
+        <a class="header-phone" href="">+7(812) 555-05-55</a><br>
+        г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
+      </p>
+      <ul class="header-auth">
+        <li><a href=""> Войти</a></li>
+        <li><a href=""> Регистрация</a></li>
+      </ul>
+    </div>
     <nav>
       <ul class="site-navigation">
         <li><a>Главная</a></li>
@@ -47,10 +51,10 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1 class="visually-hidden">Компания "Техномарт"</h1>
-    <!-- Красная часть макета  -->
-    <section>
+  <!-- <main>
+    <h1 class="visually-hidden">Компания "Техномарт"</h1> -->
+  <!-- Красная часть макета  -->
+  <!-- <section>
       <h2>Промо-блок</h2>
       <ul>
         <li>
@@ -87,7 +91,7 @@
       <ul>
         <li>
           <h3>
-            <img src="Bosch_BFG_9000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 6000">
+            <img src="img/Bosch_BFG_6000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 6000">
             <a href="catalog_item_9.html">Перфоратор Bosch BFG 9000</a>
           </h3>
           <del>32500 Р.</del>
@@ -95,7 +99,7 @@
         </li>
         <li>
           <h3>
-            <img src="Bosch_BFG_3000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 3000">
+            <img src="img/Bosch_BFG_3000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 3000">
             <a href="catalog_item_1.html">Перфоратор Bosch BFG 3000</a>
           </h3>
           <del>22500 Р.</del>
@@ -103,7 +107,7 @@
         </li>
         <li>
           <h3>
-            <img src="Bosch_BFG_6000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 6000">
+            <img src="img/Bosch_BFG_6000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 6000">
             <a href="catalog_item_2.html">Перфоратор Bosch BFG 6000</a>
           </h3>
           <del>30500 Р.</del>
@@ -112,7 +116,7 @@
         <li>
           <h3>
             <span>new</span>
-            <img src="Bosch_BFG_2000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 2000">
+            <img src="img/Bosch_BFG_2000.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 2000">
             <a href="catalog_item_3.html">Перфоратор Bosch BFG 2000</a>
           </h3>
           <a href="">12500 Р.</a>
@@ -172,7 +176,7 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
       <!-- Слайдер -->
-      <ul>
+  <!-- <ul>
         <li>
           <h3>Доставка</h3>
           <p>
@@ -185,17 +189,18 @@
         <li>Гарантия</li>
         <li>Кредит</li>
       </ul>
-    </section>
-    <!-- Красная часть макета  -->
+    </section> -->
+  <!-- Красная часть макета  -->
+  <div class="about-us-wrapper">
     <section>
       <h2>Компания "Техномарт"</h2>
       <p class="about-us-text">
         Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта
-        и строительства не оставит равнодушным любителей сэкономить
+        и<br> строительства не оставит равнодушным любителей сэкономить
         на гастрабайтерах.
       </p>
       <p class="about-us-text">
-        Мы можем доставить ваш товар в самые отдаленные точки России!
+        Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Технормат работает со многими транспортными компаниями:
       </p>
       <ul class="transport-list">
@@ -213,39 +218,42 @@
       </p>
       <figure>
         <a href="img/map.jpg">
-          <img src="img/map.jpg" alt="Большая Конюшенная 19" width="700" height="495">
+          <img src="img/map.jpg" alt="Большая Конюшенная 19" width="300" height="158">
         </a>
         <figcaption>Большая Конюшенная 19</figcaption>
       </figure>
       <button class="feedback-button" name="feedback">Заблудились?Напишите нам!</button>
-      <!-- Форма обратной связи -->
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="feedback-form-name">Ваше имя:</label>
-          <input id="feedback-form-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="feedback-form-email">Ваш e-mail:</label>
-          <input id="feedback-form-email" type="email" name="email" value="" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="feedback-form-message">Текст письма:</label>
-          <textarea id="feedback-form-message" name="message" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-      <!-- Форма обратной связи -->
-    </section>
+  </div>
+  <!-- Форма обратной связи -->
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="feedback-form-name">Ваше имя:</label>
+      <input id="feedback-form-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="feedback-form-email">Ваш e-mail:</label>
+      <input id="feedback-form-email" type="email" name="email" value="" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="feedback-form-message">Текст письма:</label>
+      <textarea id="feedback-form-message" name="message" placeholder="В свободной форме"></textarea>
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+  <!-- Форма обратной связи -->
+  </section>
   </main>
   <footer>
-    <div>
-      <a>
-        <img class="logo" src="img/Tekhnomart_logo.png" width="111" height="24" alt="Логотип Техномарт">
-      </a>
-      <p>
-        г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
-        +7(812) 555-05-55
-      </p>
+    <div class="middle-footer-wrapper">
+      <div class="middle-footer-logo-adress">
+        <a>
+          <img class="logo" src="img/Tekhnomart_logo.png" width="111" height="24" alt="Логотип Техномарт">
+        </a>
+        <p>
+          г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
+          +7(812) 555-05-55
+        </p>
+      </div>
       <ul>
         <li><a href="">Компания</a></li>
         <li><a href="">Новости</a></li>
@@ -265,7 +273,7 @@
         (c)2010-2017 Компания "Техномарт"<br>
         Все права защищены
       </p>
-      <ul>
+      <ul class="socials">
         <li><a href="img/icon-vk.svg">Вконтакте</a></li>
         <li><a href="img/icon-fb.svg">Фейсбук</a></li>
         <li><a href="img/icon-insta.svg">Инстаграм</a></li>

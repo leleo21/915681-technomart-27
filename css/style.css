@@ -1,11 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 1;
-    color:#000000;
+    color: #000000;
     background-color: white;
 }
 
@@ -13,14 +13,72 @@ a {
     text-decoration: none;
 }
 
+.top-header-wrapper {
+    display: flex;
+    list-style: none;
+    background-color: #293449;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+}
+
+.main-header {
+    display: block;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 320px;
+    padding-bottom: 60px;
+    background-color: #f4f7f9;
+}
+
+.main-header .logo {
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    margin-left: 130px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 55px;
+    padding-right: 56px;
+}
+
+.header-search {
+    padding-top: 14px;
+    padding-bottom: 21px;
+}
+
+input[type="search"] {
+    background-color: #293449;
+    border: none;
+}
+
+.header-navigation {
+    padding-bottom: 13px;
+    padding-top: 14px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.header-auth {
+    display: flex;
+    list-style: none;
+    margin-right: 152px;
+}
+
+.middle-head-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
 .logo {
-    background-color: #ee3643;  
+    background-color: #ee3643;
 }
 
 .about-us-text {
-    font-family: "PTSans" Arial, sans-serif;
-    font-size:13px;
-    color: #32425c;
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
 }
 
 .header-search,
@@ -32,15 +90,20 @@ a {
 }
 
 .header-navigation .header-checkout {
-    background-color:#63a63e;
+    background-color: #63a63e;
+    padding-left: 20px;
+    padding-right: 22px;
+    padding-bottom: 13px;
+    padding-top: 14px;
 }
 
-.header-tagline {        
+.header-tagline {
+
     font-size: 16px;
     color: #ee3643
 }
 
-.header-contact {         
+.header-contact {
     font-size: 14px;
     line-height: 1.71;
     color: #32425c;
@@ -49,19 +112,22 @@ a {
 .header-phone {
     font-size: 21px;
     color: #ee3643
- } 
+}
 
 .header-auth li a {
-    color:#000000;   
+    color: #000000;
     font-size: 21px;
-    background-color:white;
+    background-color: white;
 }
 
 .site-navigation a {
+    padding-top: 22px;
+    padding-bottom: 26px;
+    padding-left: 52px;
+    padding-right: 56px;
     font-size: 17px;
     color: #ffffff;
     background-color: #32425c;
-    list-style: none;
 }
 
 h2 {
@@ -71,6 +137,18 @@ h2 {
 .transport-list {
     font-size: 18px;
 }
+
+.about-us-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle-footer-logo-adress {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .about-us-link,
 .feedback-button {
@@ -92,12 +170,23 @@ footer ul a {
 
 .footer-offers a,
 .footer-contacts p a {
-    color:#ffda96;
+    color: #ffda96;
 }
 
 .footer-contacts {
+    display: flex;
+    justify-content: space-around;
     background-color: #293449;
     font-size: 16px;
+}
+
+.middle-footer-wrapper {
+    display: flex;
+    background-color: #32425c;
+}
+
+.footer-contacts .socials {
+    display: inline;
 }
 
 .header-navigation .cart {
@@ -107,12 +196,12 @@ footer ul a {
 .users-options li a {
     font-size: 14px;
     color: #32425c;
-    text-decoration-line:underline;
+    text-decoration-line: underline;
 }
 
 .users-name {
     font-size: 21px;
-    color:#000000;
+    color: #000000;
 }
 
 .breadcrumbs {
@@ -122,7 +211,7 @@ footer ul a {
 
 h1 {
     font-size: 30px;
-    color:#32425c;
+    color: #32425c;
 }
 
 .catalog-filter legend {
@@ -159,7 +248,7 @@ h1 {
 
 .item-list .price {
     font-family: "PTSans", Arial, sans-serif;
-  font-size: 17px;
-  color: #ffffff;
-  background-color: #ee3643;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #ee3643;
 }
