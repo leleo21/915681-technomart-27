@@ -18,8 +18,12 @@
                     <a class="logo">
                         <img src="img/tekhnomart_logo.png" width="109" height="19" alt="Логотип Техномарт">
                     </a>
-                    <div class="header-search">Поиск</div>
-                    <input type="search">
+
+
+                    <form class="header-search" action="" method="get">
+                        <input name="search" placeholder="Поиск:" type="search">
+                        <!-- <button type="submit">Поиск</button> -->
+                    </form>
 
                     <div class="header-navigation">
                         <a href="">Закладки</a>
@@ -43,7 +47,6 @@
                 </p>
                 <div>
                     <div class="user-wrapper">
-                        <a href=""></a>
                         <a class="users-name" href="">Равшан Джамшутович</a>
                         <a href="/profile/exit">Выход</a>
                     </div>
@@ -75,7 +78,7 @@
             <li><a href="">Инструмент</a></li>
             <li>Перфораторы</li>
         </ul>
-        <h1>Перфораторы</h1>
+        <h1 class="main-name">Перфораторы</h1>
         <section>
             <h2>Сортировка</h2>
             <ul>
@@ -84,7 +87,8 @@
                 <li>По функционалу</li>
             </ul>
         </section>
-        <section class="catalog-colums">
+        <div class="catalog-colums">
+
             <section>
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <!-- Форма фильтра товаров -->
@@ -177,7 +181,7 @@
                             <span>new</span>
                             <h3>
                                 <img src="img/Bosch_BFG_2000.jpg" width="220" height="165"
-                                alt="Перфоратор Bosch BFG 2000">
+                                    alt="Перфоратор Bosch BFG 2000">
                                 <a href="catalog_item_3.html">
                                     <span>Перфоратор Bosch BFG 2000</span>
                                 </a>
@@ -275,14 +279,8 @@
                     <li><a href="">Следующая</a></li>
                 </ul>
             </section>
-            <!-- Модальное окно кнопки Купить -->
-            <div class="visually-hidden">
-                <h3>Товар добавлен в корзину</h3>
-                <a href="">Оформить заказ</a>
-                <a href="">Продолжить покупки</a>
-            </div>
-            <!-- /Модальное окно кнопки Купить -->
-        </section>
+
+        </div>
         <div>
             <h3>Пара слов о перфораторах</h3>
             <p>
@@ -303,7 +301,7 @@
                     </a>
                     <p class="top-footer-adress">
                         г. Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
-                        +7(812) 555-05-55
+                        <a class="footer-phone" href="tel:+78125550555">+7(812) 555-05-55</a>
                     </p>
                 </div>
                 <div class="top-footer-navigation">
@@ -329,6 +327,7 @@
                     (c)2010-2017 Компания "Техномарт"<br>
                     Все права защищены
                 </p>
+                <!-- Вставить svg ссылки -->
                 <ul class="socials">
                     <li><a href=""><img src="img/icon-vk.svg" alt="Vkontakte"></a></li>
                     <li><a href=""><img src="img/icon-fb.svg" alt="Facebook"></a></li>
@@ -345,4 +344,11 @@
             </div>
         </div>
     </footer>
+    <!-- Модальное окно кнопки Купить -->
+    <div class="add_cart">
+        <h3>Товар добавлен в корзину</h3>
+        <a href="">Оформить заказ</a>
+        <a href="">Продолжить покупки</a>
+    </div>
+    <!-- /Модальное окно кнопки Купить -->
 </body>

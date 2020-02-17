@@ -18,8 +18,10 @@
           <a class="logo">
             <img src="img/tekhnomart_logo.png" width="109" height="19" alt="Логотип Техномарт">
           </a>
-          <div class="header-search">Поиск:</div>
-          <input type="search">
+          <form class="header-search" action="" method="get">
+            <input name="search" placeholder="Поиск:" type="search">
+            <!-- <button type="submit">Поиск</button> -->
+          </form>
           <div class="header-navigation">
             <a href="">Закладки</a>
             <a href="">Корзина</a>
@@ -226,7 +228,7 @@
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <figure>
+        <figure class="no-figure-margin">
           <a href="">
             <img src="img/map.jpg" alt="Большая Конюшенная 19" width="300" height="158">
           </a>
@@ -262,7 +264,7 @@
           </a>
           <p class="top-footer-adress">
             г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
-            +7(812) 555-05-55
+            <a class="footer-phone" href="tel:+78125550555">+7(812) 555-05-55</a>
           </p>
         </div>
         <div class="top-footer-navigation">
@@ -288,6 +290,7 @@
           (c)2010-2017 Компания "Техномарт"<br>
           Все права защищены
         </p>
+        <!-- Вставить svg ссылки -->
         <ul class="socials">
           <li><a href=""><img src="img/icon-vk.svg" alt="Vkontakte"></a></li>
           <li><a href=""><img src="img/icon-fb.svg" alt="Facebook"></a></li>

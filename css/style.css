@@ -67,6 +67,10 @@ html {
     padding-bottom: 21px;
 }
 
+.header-search ::placeholder {
+    color: #ffffff;
+}
+
 input[type="search"] {
     background-color: #293449;
     border: none;
@@ -170,11 +174,9 @@ input[type="search"] {
     line-height: 1.11;
 }
 
-figure {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+.no-figure-margin {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .about-us-link,
@@ -233,6 +235,10 @@ figure {
 
 .footer-contacts {
     background-color: #293449;
+}
+
+.footer-phone {
+    color: #ffffff;
 }
 
 .footer-contacts .container {
@@ -331,10 +337,9 @@ figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 
-h1 {
+.main-name {
     font-size: 30px;
     line-height: 1;
     color: #32425c;
@@ -363,6 +368,10 @@ h1 {
     display: none;
 }
 
+.add_cart {
+    display: none;
+}
+
 .item-list a {
     font-family: "PTSans", Arial, sans-serif;
     font-size: 18px;
@@ -376,7 +385,7 @@ h1 {
     margin: 0;
     padding: 0;
     list-style: none;
-    }
+}
 
 .item-list del {
     font-family: "PTSans", Arial, sans-serif;
