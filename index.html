@@ -19,12 +19,13 @@
             <img src="img/tekhnomart_logo.png" width="109" height="19" alt="Логотип Техномарт">
           </a>
           <form class="header-search" action="" method="get">
-            <input name="search" placeholder="Поиск:" type="search">
+
+            <div class="search-field"><input name="search" placeholder="Поиск:" type="search"></div>
             <!-- <button type="submit">Поиск</button> -->
           </form>
           <div class="header-navigation">
-            <a href="">Закладки</a>
-            <a href="">Корзина</a>
+            <a class="bookmark-link" href="">Закладки</a>
+            <a class="cart-link" href="">Корзина</a>
             <a class="header-checkout" href="">Оформить заказ</a>
           </div>
         </div>
@@ -39,10 +40,10 @@
         </p>
         <p class="header-contact">
           <a class="header-phone" href="tel:+78125550555">+7(812) 555-05-55</a><br>
-          г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
+          <span>г. Санкт-Петербург, ул. Б.Конюшенная, д19/8</span>
         </p>
         <ul class="header-auth">
-          <li><a href=""> Войти</a></li>
+          <li><a class="enter-link" href=""> Войти</a></li>
           <li><a href=""> Регистрация</a></li>
         </ul>
       </div>
@@ -205,22 +206,24 @@
   <div class="about-us-wrapper">
     <div class="container">
       <section>
-        <h2>Компания "Техномарт"</h2>
-        <p class="about-us-text">
-          Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта
-          и<br> строительства не оставит равнодушным любителей сэкономить
-          на гастрабайтерах.
-        </p>
-        <p class="about-us-text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Технормат работает со многими транспортными компаниями:
-        </p>
-        <ul class="transport-list">
-          <li>Деловые линии</li>
-          <li>Автотрединг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="about-us-link" href="about_us.html">Подробнее о компании</a>
+        <div class="about-company">
+          <h2>Компания "Техномарт"</h2>
+          <p class="about-us-text">
+            Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта
+            и<br> строительства не оставит равнодушным любителей сэкономить
+            на гастрабайтерах.
+          </p>
+          <p class="about-us-text">
+            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Технормат работает со многими транспортными компаниями:
+          </p>
+          <ul class="transport-list">
+            <li>Деловые линии</li>
+            <li>Автотрединг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="about-us-link" href="about_us.html">Подробнее о компании</a>
+        </div>
       </section>
       <section>
         <h2>Контакты</h2>
@@ -228,7 +231,7 @@
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
-        <figure class="no-figure-margin">
+        <figure class="feedback-map">
           <a href="">
             <img src="img/map.jpg" alt="Большая Конюшенная 19" width="300" height="158">
           </a>
@@ -259,8 +262,8 @@
     <div class="top-footer-wrapper">
       <div class="container">
         <div class="top-footer-logo-adress">
-          <a>
-            <img class="logo" src="img/tekhnomart_logo.png" width="111" height="24" alt="Логотип Техномарт">
+          <a class="logo">
+            <img src="img/tekhnomart_logo.png" width="109" height="19" alt="Логотип Техномарт">
           </a>
           <p class="top-footer-adress">
             г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
@@ -274,6 +277,8 @@
             <li><a href="">Каталог</a></li>
             <li><a href="">Доставка</a></li>
             <li><a href="">Контакты</a></li>
+
+
           </ul>
           <ul class="footer-offers">
             <li><a href="">Материалы</a></li>
