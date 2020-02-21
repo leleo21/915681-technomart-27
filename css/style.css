@@ -61,6 +61,7 @@ html {
 .top-header-wrapper {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .main-header {
@@ -69,51 +70,62 @@ html {
 }
 
 .logo {
-    padding: 13px 56px 15px 55px;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    padding: 0 55px;
+    box-shadow:
+        0px 5px 0 0 rgba(0, 0, 0, 0.24),
+        0px 5px 0 0 #ee3643;
     background-color: #ee3643;
+    position: relative;
+    height: 42px;
 }
 
-
+.logo img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .header-search {
-    display: flex;
-    display: inline-block;
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left: 18px;
-    padding-right: 26px;
+    position: relative;
+    line-height: 1.06;
+
+
+
 }
 
 .header-search ::placeholder {
     color: #ffffff;
 }
 
-.search-field {
+input[type="search"] {
     background-color: #293449;
     border: none;
-
-    position: relative;
+    height: 42px;
     padding-left: 50px;
 }
 
-.header-search::before {
-    content: "";
-    position: absolute;
+.header-search .search-submit {
 
+    position: absolute;
+    border: none;
     top: 15px;
     left: 13px;
 
+    top: 50%;
+
+    transform: translateY(-50%);
+
     width: 17px;
     height: 17px;
+    background: transparent;
 
-    background-image: url(../img/icon-search.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    opacity: 0.3;
 }
 
+.header-search .search-submit {
+    fill: #f1f5f7;
+    opacity: 0.3;
+}
 
 .header-navigation li {
     display: flex;
@@ -123,11 +135,9 @@ html {
 
 .header-navigation a {
     display: inline-block;
-    padding-top: 14px;
-    padding-bottom: 13px;
+    line-height: 42px;
     padding-left: 18px;
     padding-right: 26px;
-
 }
 
 .header-navigation .bookmark-link {
@@ -160,7 +170,7 @@ html {
 .cart-link::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 14px;
     left: 13px;
 
     width: 14px;
@@ -178,14 +188,14 @@ html {
     justify-content: space-around;
     list-style: none;
     background-color: #32425c;
-    padding: 22px 55px 23px 52px;
+    line-height: 60px;
 }
 
-.site-navigation a:hover {
+.site-navigation li:hover {
     background-color: #293449;
 }
 
-.site-navigation a:active {
+.site-navigation li:active {
     color: rgba(255, 255, 255, 0.5);
     background-color: #1d2739;
 }
@@ -199,10 +209,11 @@ html {
 .header-navigation a {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
-    line-height: 1.06;
+
     color: #ffffff;
     background-color: #293449;
 }
+
 
 .header-navigation .header-checkout,
 .header-checkout:focus {
@@ -248,6 +259,18 @@ input[type="search"]:focus {
     background-color: #ffffff;
 }
 
+input[type="search"]:focus~.search-submit svg {
+    fill: #ee3643;
+}
+
+input[type="search"]:hover~.search-submit svg {
+    opacity: 1;
+}
+
+input[type="search"]:active~.search-submit svg {
+    opacity: 0.3;
+}
+
 .header-auth a:hover {
     color: red;
 }
@@ -259,7 +282,6 @@ input[type="search"]:focus {
 .header-auth a:active {
     color: rgba(0, 0, 0, 0.3);
 }
-
 
 .middle-header-wrapper .container {
     margin-bottom: 44px;
@@ -284,19 +306,17 @@ input[type="search"]:focus {
     line-height: 1;
     color: #ee3643;
     border: 3px solid #ffffff;
-    padding-left: 50px;
-    position: relative;
-}
+    padding: 5px 50px;
 
-.header-contact span {
-    margin-top: 10px;
+    position: relative;
+
 }
 
 .header-phone::before {
     content: "";
     position: absolute;
 
-    top: 1px;
+    top: 8px;
     left: 13px;
 
     width: 19px;
@@ -312,7 +332,6 @@ input[type="search"]:focus {
 .header-auth {
     display: flex;
     list-style: none;
-
 }
 
 .header-auth li {
@@ -323,7 +342,6 @@ input[type="search"]:focus {
 .enter-link {
     position: relative;
     padding-left: 50px;
-
 }
 
 .enter-link::before {
@@ -368,7 +386,6 @@ input[type="search"]:focus {
 .about-us-wrapper .container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .about-us-text {
@@ -386,6 +403,10 @@ input[type="search"]:focus {
 .transport-list {
     padding: 0;
     margin-bottom: 86px;
+}
+
+.feedback-form {
+    display: none;
 }
 
 .feedback-map {
@@ -510,25 +531,31 @@ textarea:focus {
     flex-direction: column;
 }
 
-.socials {
-    margin-left: auto;
+
+
+.socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 160px;
+
 }
 
-.socials li {
+.social-button {
     width: 42px;
     height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212a3a;
     border-radius: 50%;
-    background: #212a3a;
-    display: inline-block;
-    margin-left: 3px;
-    position: relative;
+    margin-right: 3px;
+
 }
 
-.socials img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.social-button:hover,
+.social-button:active {
+    background-color: #ee3643;
 }
 
 .link-name:nth-of-type(2) {
@@ -540,8 +567,9 @@ textarea:focus {
 
 .users-name {
     font-size: 21px;
-    line-height: 1;
+    line-height: 45px;
     color: #000000;
+
 }
 
 .users-options li a {
@@ -578,7 +606,7 @@ textarea:focus {
     content: "";
     position: absolute;
 
-    left: 10px;
+    left: 6px;
     top: 10px;
 
     width: 20px;
@@ -594,7 +622,7 @@ textarea:focus {
     content: "";
     position: absolute;
 
-    right: 10px;
+    right: 4px;
     top: 10px;
 
     width: 20px;
@@ -621,10 +649,21 @@ textarea:focus {
     display: flex;
 }
 
+.catalog-filter li {
+    list-style: none;
+}
+
+.catalog-filter legend {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 14px;
+    font-weight: bold;
+}
+
 .item-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    position: relative;
 }
 
 .main-name {
@@ -652,40 +691,143 @@ textarea:focus {
     line-height: 1.38;
 }
 
-.buy_add-item {
+.item-list-wrapper {
+    width: 700px;
+    margin: 20px auto;
+}
+
+.item-list {
+    padding-inline-start: 0px;
+}
+
+.buy_add-item a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    color: white;
+
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    border-radius: 3px;
+
+
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+.buy_add-item .bookmark {
+    background-color: #ffffff;
+    color: #32425c;
+}
+
+.item-list .buy_add-item {
     display: none;
+}
+
+.item-list li:hover .buy_add-item {
+    display: block;
+}
+
+.buy_add-item .buy {
+    position: relative;
+}
+
+.buy::before {
+    content: "";
+    position: absolute;
+
+    left: 10px;
+    top: 8px;
+
+    width: 20px;
+    height: 18px;
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
 }
 
 .add_cart {
     display: none;
 }
 
-.item-list a {
+
+
+.item-list .title {
     font-family: "PTSans", Arial, sans-serif;
     font-size: 18px;
-    line-height: 1.11;
-
+    line-height: 33px;
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .item-list li {
     width: 220px;
     border: 1px solid #e5e5e5;
-    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
+
 }
 
-.item-list del {
+.item-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.item-list .discount {
     font-family: "PTSans", Arial, sans-serif;
     font-size: 17px;
     line-height: 1.06;
     color: #999999;
+    text-align: center;
+    text-decoration: line-through;
+
 }
 
 .item-list .price {
+    position: relative;
+    width: 140px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+
+    color: white;
+    background: #ee3643;
+    border-radius: 3px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 17px;
     line-height: 1.06;
     color: #ffffff;
-    background-color: #ee3643;
+}
+
+.item-list .price:after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -10px;
+
+    width: 0;
+    height: 0;
+
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
