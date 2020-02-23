@@ -15,8 +15,8 @@
     <div class="top-header ">
       <div class="container">
         <div class="top-header-wrapper">
-          <a class="logo">
-            <img src="img/tekhnomart_logo.png" width="109" height="19" alt="Логотип Техномарт">
+          <a class="logo logo-header">
+            <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
           </a>
           <form class="header-search" action="" method="get">
 
@@ -28,8 +28,8 @@
                 </svg></button>
           </form>
           <div class="header-navigation">
-            <a class="bookmark-link" href="">Закладки</a>
-            <a class="cart-link" href="">Корзина</a>
+            <a class="bookmark-link" href="">Закладки: 0</a>
+            <a class="cart-link" href="">Корзина: 0</a>
             <a class="header-checkout" href="">Оформить заказ</a>
           </div>
         </div>
@@ -48,7 +48,7 @@
         </p>
         <ul class="header-auth">
           <li><a class="enter-link" href=""> Войти</a></li>
-          <li><a href=""> Регистрация</a></li>
+          <li><a class="checkin" href=""> Регистрация</a></li>
         </ul>
       </div>
     </div>
@@ -245,9 +245,14 @@
       </section>
     </div>
   </div>
+  <div class="modal-map close-modal-button">
+    <img src="img/map-big.jpg" alt="Большая Конюшенная 19">
+  </div>
   <!-- Форма обратной связи -->
-  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
+  <form class="modal feedback-form close-modal-button" action="https://echo.htmlacademy.ru" method="post">
+    <div class="feedback-form-content">
+      
+      <p>
       <label for="feedback-form-name">Ваше имя:</label>
       <input id="feedback-form-name" type="text" name="name" value="" placeholder="Имя Фамилия">
     </p>
@@ -255,24 +260,31 @@
       <label for="feedback-form-email">Ваш e-mail:</label>
       <input id="feedback-form-email" type="email" name="email" value="" placeholder="email@example.com">
     </p>
+   
     <p>
       <label for="feedback-form-message">Текст письма:</label>
       <textarea id="feedback-form-message" name="message" placeholder="В свободной форме"></textarea>
     </p>
+  </div>
+    <div class="options">
     <button type="submit">Отправить</button>
+  </div>
   </form>
+
   <!-- Форма обратной связи -->
   <footer>
     <div class="top-footer-wrapper">
       <div class="container">
         <div class="top-footer-logo-adress">
-          <a class="logo">
-            <img src="img/tekhnomart_logo.png" width="109" height="19" alt="Логотип Техномарт">
+        
+          <a class="logo logo-footer">
+            <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
           </a>
-          <p class="top-footer-adress">
+       
+            <div class="top-footer-adress">
             г. Санкт-Петербург, ул. Б.Конюшенная, д19/8
             <a class="footer-phone" href="tel:+78125550555">+7(812) 555-05-55</a>
-          </p>
+                  </div>
         </div>
         <div class="top-footer-navigation">
           <ul class="footer-navigation">
