@@ -84,15 +84,15 @@ html {
     transform: translate(-50%, -50%);
 }
 
-.logo-header img {
+/* .logo-header img {
     width: 109px;
     height: 19px;
-}
+} */
 
-.logo-footer img {
+/* .logo-footer img {
     width: 138px;
     height: 23px;
-}
+} */
 
 .logo-header {
     padding: 0 55px;
@@ -151,6 +151,7 @@ input[type="search"] {
 
     position: absolute;
     border: none;
+    top: 6px;
     left: 13px;
     width: 40px;
     height: 40px;
@@ -162,27 +163,27 @@ input[type="search"] {
 .header-navigation {
     display: flex;
     margin-left: auto;
+    
 }
 
-
 .header-navigation a {
-    display: inline-block;
-    line-height: 42px;
+    min-width: 150px;
+    padding:14px 20px;
+    justify-content: space-around;
 
 }
 
 .header-navigation .bookmark-link {
-    position: relative;
-    padding-left: 40px;
-    padding-right: 61px
+    padding-left: 50px;
 }
 
 .bookmark-link::before {
     content: "";
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
 
-    top: 13px;
-    left: 13px;
+    right: 20px;
 
     width: 14px;
     height: 16px;
@@ -195,9 +196,8 @@ input[type="search"] {
 }
 
 .header-navigation .cart-link {
-    position: relative;
-    padding-left: 35px;
-    padding-right: 29px;
+    padding-left: 50px;
+
 }
 
 .header-navigation .login-cart {
@@ -206,9 +206,11 @@ input[type="search"] {
 
 .cart-link::before {
     content: "";
-    position: absolute;
-    top: 12px;
-    left: 7px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    right: 20px;
 
     width: 14px;
     height: 16px;
@@ -238,11 +240,6 @@ input[type="search"] {
     display: block;
     padding: 20px 0;
     text-align: center;
-}
-
-.header-checkout {
-    padding-left: 20px;
-    padding-right: 23px;
 }
 
 .site-navigation a:hover {
@@ -389,10 +386,6 @@ input[type="search"]:active~.search-submit svg {
     list-style: none;
 }
 
-.header-auth li {
-    display: inline-block;
-}
-
 .header-auth li+li {
     margin-left: 15px;
 }
@@ -400,7 +393,6 @@ input[type="search"]:active~.search-submit svg {
 .header-auth li a {
     color: #000000;
     font-size: 21px;
-    line-height: 1;
     background-color: white;
 }
 
@@ -434,7 +426,8 @@ input[type="search"]:active~.search-submit svg {
 /* Promo block */
 
 .promo .container {
-    margin-top: 59px;
+    margin-top: 45px;
+    margin-bottom:53px;
 }
 
 .promo ul {
@@ -642,6 +635,8 @@ input[type="search"]:active~.search-submit svg {
     justify-content: space-between;
     background-color: #f9f5f0;
     align-items: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
 
 }
 
@@ -652,6 +647,7 @@ input[type="search"]:active~.search-submit svg {
 }
 
 .manufacturer-list {
+    margin-top: 20px;
     margin-bottom: 85px;
 }
 
@@ -976,6 +972,7 @@ textarea:focus {
     flex-direction: column;
     padding-top: 26px;
     width: 640px;
+
 }
 
 .footer-navigation a {
@@ -987,7 +984,8 @@ textarea:focus {
 
 .footer-navigation,
 .footer-offers {
-    padding-inline-start: 0;
+    display: flex;
+    list-style: none;
 }
 
 .footer-offers a {
@@ -997,7 +995,6 @@ textarea:focus {
 }
 
 .top-footer-navigation li {
-    display: inline-block;
     padding-left: 60px;
 }
 
@@ -1103,18 +1100,19 @@ textarea:focus {
 
 .user-wrapper {
     flex-direction: column;
-    position: relative;
     background-color: #ffffff;
     padding: 10px 30px;
 }
 
 .users-name::before {
     content: "";
-    position: absolute;
+    position: relative;
 
-    left: 6px;
-    top: 10px;
+    display: inline-block;
+    vertical-align: middle;
 
+    right: 10px;
+   
     width: 20px;
     height: 18px;
     background-image: url(../img/icon-user.svg);
@@ -1126,11 +1124,13 @@ textarea:focus {
 
 .user-wrapper::after {
     content: "";
-    position: absolute;
+    position: relative;
 
-    right: 4px;
-    top: 10px;
+    display: inline-block;
+    vertical-align: middle;
 
+    left: 5px;
+    
     width: 20px;
     height: 18px;
     background-image: url(../img/icon-logout.svg);
@@ -1429,6 +1429,7 @@ textarea:focus {
 .head-filter .filter,
 .head-filter .sorting {
     display: inline-block;
+    vertical-align: middle;
     background-color: #f7f3ec;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
@@ -1771,6 +1772,7 @@ textarea:focus {
 
 .feedback-button {
     margin-top: 40px;
+    min-width: 300px;
 }
 
 /* Модальное окно .feedback-form */
@@ -1897,7 +1899,7 @@ textarea:focus {
     border-left-color: #ee3643;
 }
 
-/* body:before {
+body:before {
     display: block;
     content: '';
     width: 1200px;
@@ -1910,4 +1912,4 @@ textarea:focus {
     left: 50%;
     margin-left: -600px;
     z-index: 80;
-} */
+}
