@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="top-header-wrapper">
                     <a class="logo logo-header" href="index.html">
-                        <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width = "109" height = "19">
+                        <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="109" height="19">
                     </a>
 
 
@@ -101,6 +101,15 @@
                     <div class="sorting-price">По цене</div>
                     <div class="sorting-type">По типу</div>
                     <div class="sorting-func">По функционалу</div>
+                    <div class="icon-dir">
+                        <svg class="icon-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                            viewBox="0 0 11 10">
+                            <path d="M5.5 0L0 10h11z" />
+                        </svg>
+                        <svg class="icon-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                            viewBox="0 0 11 10">
+                            <path d="M5.5 10L0 0h11" /></svg>
+                    </div>
                 </div>
             </section>
             <div class="catalog-colums">
@@ -122,7 +131,7 @@
                                 </div>
                                 <div class="price-controls">
                                     <label class="min-price"> <input name="min-price" type="number" value="0"></label>
-                                    <label class="max-price"> <input name="max-price" type="number"
+                                    <label class=" between-stick max-price"> <input name="max-price" type="number"
                                             value="30000"></label>
                                 </div>
                             </div>
@@ -139,7 +148,7 @@
                             <ul>
                                 <li class="filter-option">
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Bosch"
-                                        id="filter-Bosch" checked>
+                                        id="filter-Bosch" disabled>
 
                                     <label for="filter-Bosch">Bosch</label>
                                 </li>
@@ -333,10 +342,10 @@
             <div class="container">
                 <div class="top-footer-logo-adress">
                     <a class="logo logo-footer" href="index.html">
-                        <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width= "138" height="23">
+                        <img src="img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23">
                     </a>
                     <p class="top-footer-adress">
-                        г. Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
+                        г. Санкт-Петербург, ул. Б.Конюшенная, д 19/8
                         <a class="footer-phone" href="tel:+78125550555">+7(812) 555-05-55</a>
                     </p>
                 </div>
@@ -396,8 +405,7 @@
             </div>
         </div>
     </footer>
-    <!-- Модальное окно кнопки Купить -->
-    <div class="modal buy_add-modal close-modal-button">
+    <div class="modal buy_add-modal">
         <div class="modal_content">
             <div class="modal_header">
                 <h3>Товар добавлен в корзину</h3>
@@ -406,19 +414,8 @@
                 <a class="modal-chekout" href="">Оформить заказ</a>
                 <a class="continue-buy" href="">Продолжить покупки</a>
             </div>
+            <button class="close-buy-button" type="button"></button>
         </div>
     </div>
-    <!-- /Модальное окно кнопки Купить -->
-    <script>
-
-        var buttons = document.querySelectorAll(".buy");
-        var popup = document.querySelector(".buy_add-modal");
-
-        buttons.forEach((button) => {
-            button.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-            });
-        });
-    </script>
+    <script src="js/catalog.js"></script>
 </body>
